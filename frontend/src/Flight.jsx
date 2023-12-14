@@ -16,7 +16,7 @@ function Flight(props) {
     setShowPopup(false);
   }
 
-  function handleSeatSelection(id){
+  function handleSeatSelection(){
 
   }
 
@@ -54,7 +54,7 @@ function Flight(props) {
                 {seats.map((row, key) => (
                   <div key={key}>
                     {row.seats.map((seat, key) => (
-                      <button>{row.rowNumber}{seat.seatLetter}</button>
+                      <button onClick={handleSeatSelection}>{row.rowNumber}{seat.seatLetter}</button>
                     ))}
                   </div>
                 ))}
