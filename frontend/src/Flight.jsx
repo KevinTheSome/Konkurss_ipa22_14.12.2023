@@ -54,7 +54,7 @@ function Flight(props) {
                 {seats.map((row, key) => (
                   <div key={key}>
                     {row.seats.map((seat, key) => (
-                      <button></button>
+                      <button>{row.rowNumber}{seat.seatLetter}</button>
                     ))}
                   </div>
                 ))}
