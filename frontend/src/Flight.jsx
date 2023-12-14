@@ -6,6 +6,7 @@ function Flight(props) {
 
   const [showPopup, setShowPopup] = useState(false);
   const [seats, setSeats] = useState(props.flight.seats);
+  const [selectedSeats, setSelectedSeats] = useState("");
 
   //handels the event of clicking on the flight
   function handleClick(){
@@ -17,10 +18,14 @@ function Flight(props) {
   }
 
   function handleSeatSelection(){
-
+    console.log("I clikced on the seat yey ;)");
   }
 
   function randomSeat(){
+
+  }
+
+  function selectSeat(){
 
   }
 
@@ -48,7 +53,6 @@ function Flight(props) {
             <div>
               <h1 className={styles.h1Popup}>Seat reservation</h1>
               <button onClick={randomSeat}>Pick a random seat</button>
-              {/*The seat rendering part*/}
 
               <div className={styles.rows}>
                 {seats.map((row, key) => (
@@ -60,7 +64,7 @@ function Flight(props) {
                 ))}
               </div>
 
-              <button>reserve</button>
+              <button onClick={selectSeat}>reserve</button>
             </div>
         </Popup>
 
