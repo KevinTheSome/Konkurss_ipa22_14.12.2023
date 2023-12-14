@@ -1,4 +1,4 @@
-##Konkurss santa-airlines
+#Konkurss santa-airlines
 
 
 Lai palaistu "frontend" kadas komandas tev jadara
