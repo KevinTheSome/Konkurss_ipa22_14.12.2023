@@ -8,19 +8,51 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+body{
+    background-color: var(--nakts-melns-color);
+}
+h2{
+    color: var(--sniega-balts-color);
+}
 .mainText{
     color: var(--skuju-zaļš-color);
     text-transform: uppercase;
     font-size: 8vw;
 }
+.mainTextHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .flight{
     display:grid;
+    grid-template-columns: 1fr 4fr 1fr;
     border: var(--rotaļīgi-oranzs-color) 4px solid;
     margin: 10px;
+
+    .flightbar{
+        color: var(--rotaļīgi-oranzs-color);
+        font-size: 3rem;
+    }
 }
 
 .flight:hover {
     border: var(--Ziemassvētku-sarkans-color) 4px solid;
     cursor:pointer;
+
+    .flightbar{
+        color: var(--Ziemassvētku-sarkans-color);
+        font-size: 3rem;
+    }
+}
+
+.logo{
+    width: 25vw;
+}
+
+@media only screen and (max-width: 600px){
+    .logo{
+        width: 50vw;
+    }
 }

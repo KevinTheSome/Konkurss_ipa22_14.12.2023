@@ -30,10 +30,12 @@ function App() {
 
   return (
     <>
-      <div>
-        <img src='/public/santa-airlines-logo.png' alt="A logo"/>
+      <div className={styles.logoHolder}>
+        <img className={styles.logo} src='./src/public/santa-airlines-logo.png' alt="A logo"/>
       </div>
-      <h1 className={styles.mainText}>flight schedule</h1>
+      <div className={styles.mainTextHolder}>
+        <h1 className={styles.mainText} >flight schedule</h1>  
+      </div>
       {loading
        ? <p>Loading...</p> 
        : <div>{flightsJSX}</div>

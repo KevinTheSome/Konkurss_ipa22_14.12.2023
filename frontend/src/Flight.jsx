@@ -4,9 +4,19 @@ function Flight(props) {
 
   return (
     <div className={styles.flight}>
-      <h2>{props.flight.origin}</h2>
-      <p>{props.flightDuration}</p>
-      <h2>{props.flight.destination}</h2>
+      <div>
+        <img src='./src/public/plane-departure.svg' alt='A plane taking off'   />
+        <h2>{props.flight.origin}</h2>
+      </div>
+      <div>
+        <p>{props.flight.flightDuration}</p>
+        <p>{props.flight.flightNumber}</p>
+        <p className={styles.flightbar}>--------------------</p>
+      </div>
+      <div>
+        <img src='./src/public/plane-arrival.svg' alt='A plane landing'   />
+        <h2>{props.flight.destination}</h2>
+      </div>
     </div>
   )
 }
