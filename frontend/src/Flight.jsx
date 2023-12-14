@@ -51,12 +51,10 @@ function Flight(props) {
               {/*The seat rendering part*/}
 
               <div className={styles.rows}>
-                {seats.map((seat, key) => (
+                {seats.map((row, key) => (
                   <div key={key}>
-                    {seats.map((seat, key) => (
-                      <div key={key}>
-                        
-                      </div>
+                    {row.seats.map((seat, key) => (
+                      <button></button>
                     ))}
                   </div>
                 ))}
