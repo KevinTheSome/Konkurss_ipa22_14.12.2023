@@ -14,6 +14,9 @@ body{
 h2{
     color: var(--sniega-balts-color);
 }
+p{
+    color: var(--sniega-balts-color);
+}
 .mainText{
     color: var(--skuju-zaļš-color);
     text-transform: uppercase;
@@ -30,6 +33,7 @@ h2{
     grid-template-columns: 1fr 4fr 1fr;
     border: var(--rotaļīgi-oranzs-color) 4px solid;
     margin: 10px;
+    padding: 10px;
 
     .flightbar{
         color: var(--rotaļīgi-oranzs-color);
@@ -49,6 +53,40 @@ h2{
 
 .logo{
     width: 25vw;
+}
+.middleHolder{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.middleTextHolder{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.arrivalHolder{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.departureHolder{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.insadePopUp{
+    color: #000000;
+}
+
+.rows{
+    color: #000001;
+}
+
+.h1Popup{
+    color: var(--skuju-zaļš-color);
+    text-transform: uppercase;
+    font-size: 4vw;
 }
 
 @media only screen and (max-width: 600px){

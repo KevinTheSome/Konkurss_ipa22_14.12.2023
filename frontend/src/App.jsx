@@ -1,6 +1,5 @@
 //importejam vissas vajadzgs lietas
 import { useState,useEffect } from 'react'
-import axios from 'axios';
 import Flight from './Flight.jsx'
 import styles from './App.module.css';
 
@@ -30,15 +29,19 @@ function App() {
 
   return (
     <>
-      <div className={styles.logoHolder}>
-        <img className={styles.logo} src='./src/public/santa-airlines-logo.png' alt="A logo"/>
-      </div>
-      <div className={styles.mainTextHolder}>
-        <h1 className={styles.mainText} >flight schedule</h1>  
-      </div>
       {loading
-       ? <p>Loading...</p> 
-       : <div>{flightsJSX}</div>
+       ? <h1>Loading..</h1>
+       : <div>
+            <nav>
+              <div className={styles.logoHolder}>
+                <img className={styles.logo} src='./src/public/santa-airlines-logo.png' alt="A logo"/>
+              </div>
+              <div className={styles.mainTextHolder}>
+                <h1 className={styles.mainText} >flight schedule</h1>  
+              </div>
+            </nav>
+          {flightsJSX}
+        </div>
       }
     </>
   )
