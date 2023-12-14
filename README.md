@@ -1,6 +1,3 @@
-#Konkurss santa-airlines
-
-
 Lai palaistu "frontend" kadas komandas tev jadara
 
 cd .\frontend\
