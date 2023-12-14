@@ -5,4 +5,22 @@
     --Ziemassvētku-sarkans-color: #bb2528;
     --sniega-balts-color: #ffffff;
     --nakts-melns-color: #000000;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.mainText{
+    color: var(--skuju-zaļš-color);
+    text-transform: uppercase;
+    font-size: 8vw;
+}
+
+.flight{
+    display:grid;
+    border: var(--rotaļīgi-oranzs-color) 4px solid;
+    margin: 10px;
+}
+
+.flight:hover {
+    border: var(--Ziemassvētku-sarkans-color) 4px solid;
+    cursor:pointer;
 }
