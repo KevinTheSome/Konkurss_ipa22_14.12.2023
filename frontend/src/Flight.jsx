@@ -20,6 +20,10 @@ function Flight(props) {
 
   }
 
+  function randomSeat(){
+
+  }
+
   return (
     <article className={styles.flight} onClick={handleClick}>
           <div className={styles.departureHolder}>
@@ -43,7 +47,7 @@ function Flight(props) {
           <Popup open={showPopup} closeOnDocumentClick onClose={closePopup}>
             <div>
               <h1 className={styles.h1Popup}>Seat reservation</h1>
-              <button>Pick a random seat</button>
+              <button onClick={randomSeat}>Pick a random seat</button>
               {/*The seat rendering part*/}
 
               <div className={styles.rows}>
